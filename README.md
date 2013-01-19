@@ -19,16 +19,6 @@ Then start instrumenting your code:
 
     # Create a stats instance.
     statsd = Statsd.new('localhost', 8125)
-
-    # In rails
-        # Add to gemfile.
-        gem 'statsd'
-        
-        # Load the dogstats module.
-        require 'statsd'
-        
-        # Create a stats instance.
-        statsd = Statsd::Client.new
         
     # Increment a counter.
     statsd.increment('page.views')
